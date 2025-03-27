@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="elephant">
+        <img src="ele.svg" alt="" id="elephantAsset">
+    </div>
+    <header>
+        ToDoList with PostgreSQL
+    </header>
+    <main>
+        <div class="inputDiv">
+            <input type="text" id="inputTask" placeholder="Write down here">
+
+            <button id="addButton">add</button>
+            <div id="burgerDiv">
+                <div id="burger">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+                <div id="burgerContent" class="hidden">
+                    <div class="burgerDivRadio">
+                        <input type="radio" name="taskType" id="allTasks" checked>
+                        <label for="allTasks">All tasks</label>
+                    </div>
+                    <div class="burgerDivRadio">
+                        <input type="radio" name="taskType" id="currentTasks">
+                        <label for="currentTasks">Current tasks</label>
+                    </div>
+                    <div class="burgerDivRadio">
+                        <input type="radio" name="taskType" id="completedTasks">
+                        <label for="completedTasks">Completed tasks</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="plansBox">
+            <div id="plans">
+            </div>
+        </div>
+    </main>
+
+
+
+    <template id="taskTemplate">
+        <div class="task">
+            <button class="doneBtn">Done</button>
+            <div class="taskTextWrapper">
+                <p id="taskText"></p>
+            </div>
+            <button class="deleteBtn">X</button>
+        </div>
+    </template>
+<script src="javascript.js"></script>
+<script src="elephantAnim.js"></script>
+</body>
+</html>

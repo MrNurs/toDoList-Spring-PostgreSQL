@@ -1,0 +1,141 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to left, #01629f, #005ccd);
+    overflow-y: hidden;
+}
+#elephant{
+    position: absolute;
+    pointer-events: none;
+}
+#elephantAsset{
+    height: 200px;
+    width: 200px;
+    filter: invert(1);
+}
+header{
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 70px;
+    color: aliceblue;
+    font-size: 40px;
+}
+main{
+    margin: auto auto;
+    width: 50%;
+    height: 80vh;
+    background: rgba(255, 255, 255, 0.5); 
+    color: white;
+    padding: 25px;
+    border-radius: 10px;
+
+}
+.inputDiv{
+    width: 100%;
+    height: 40px;
+    align-items:center;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+#inputTask{
+    width: 75%;
+    height: 25px;
+}
+.taskInput{
+    all: unset;
+    padding: 8px 12px;
+    border: 2px solid #ccc; 
+    z-index: 2;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    font-size: 16px;
+    color: #333;
+    box-sizing: border-box;
+    transition: border-color 0.2s ease-in-out;
+    transform: scaleX(1.02);
+}
+#addButton{
+    height: 31px;
+}
+.taskTextWrapper{
+    max-width: 200px;
+    width: 100%;
+    margin: 0 auto;
+}
+.completed {
+    opacity: 0.5;
+    transition: opacity 0.3s ease-in-out;
+}
+.task{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.4);
+    width: 40vw;
+    padding:0px 20px;
+    height: 50px;
+    transition: 0.5s ease-in-out;
+    z-index: 1;
+}
+.task:hover{
+    background: rgb(93, 93, 255);
+}
+#burgerDiv{
+    background-color: #3f31ff;
+    height: 100%;
+    width: 4vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+#burgerContent{
+    background-color: #3f31ff;
+    position: absolute;
+    top: 110%;
+    right: 0;
+    width: 300%;
+    height: 100px;
+    overflow-wrap: break-word;
+    overflow: hidden;
+    transition: height 0.5s ease-in-out;
+    z-index: 5;
+}
+.burgerDivRadio{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: 10px;
+    transition: height 0.5s ease-in-out;
+}
+.hidden{
+    position: absolute;
+    height: 0px!important;
+    overflow: hidden!important;
+    padding: 0 !important; 
+}
+#burger{
+    background-color: #3f31ff;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+}
+.line{
+    width: 40%;
+    background-color: #ffffff;
+    height: 2px;
+}
+.plansBox{
+    overflow-y: scroll;
+    height: 97%;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
