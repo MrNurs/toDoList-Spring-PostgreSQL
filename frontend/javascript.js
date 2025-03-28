@@ -46,9 +46,10 @@ async function loadOnStart(){
     
     id = taskMap.size > 0 ? Math.max(...taskMap.keys()) + 1 : 0;
     console.log(id)
-    console.log('loading')
+    loadingIcon.classList.toggle('hidden')
     //responses from backend
     let postGresMap = await getMethod(); 
+    loadingIcon.classList.toggle('hidden')
     if(postGresMap){
         id = postGresMap.size > 0 ? Math.max(...postGresMap.keys()) + 1 : 0;
         postGresMap.forEach((content, id) => {
