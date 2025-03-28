@@ -15,8 +15,8 @@
     </header>
     <main>
         <div class="inputDiv">
+            
             <input type="text" id="inputTask" placeholder="Write down here">
-
             <button id="addButton">add</button>
             <div id="burgerDiv">
                 <div id="burger">
@@ -39,6 +39,9 @@
                     </div>
                 </div>
             </div>
+            <div id="loadingIcon" class="hidden">
+                loading...
+            </div>
         </div>
         <div class="plansBox">
             <div id="plans">
@@ -49,11 +52,15 @@
 
 
     <template id="taskTemplate">
-        <div class="task">
+        <div class="task" data-key="">
             <button class="doneBtn">Done</button>
             <div class="taskTextWrapper">
                 <p id="taskText"></p>
             </div>
+            <div class="taskInnerInfo">
+                <p id="taskInnerText"></p>
+            </div>
+
             <button class="deleteBtn">X</button>
         </div>
     </template>
