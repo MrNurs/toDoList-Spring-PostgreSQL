@@ -1,4 +1,4 @@
-"Open index.html at http://127.0.0.1:5500/ using Live Server."
+"Open index.html at http://127.0.0.1:5500/ using Live Server, or update the URL in the ToDoListController @CrossOrigin annotation (@CrossOrigin(origins = "http://127.0.0.1:5500"))."
 
 Stack:
 
