@@ -1,14 +1,14 @@
-Open the index.html on http://127.0.0.1:5500/ with liveStream
+"Open index.html at http://127.0.0.1:5500/ using Live Server."
 
 Stack:
 
-Spring Boot - for backend development,
+Spring Boot – backend development
 
-PostgreSQL - database,
+PostgreSQL – database
 
-JPA (Hibernate) - for working with the database,
+JPA (Hibernate) – ORM for database interactions
 
-REST API - for interaction with the frontend,
+REST API – communication between frontend and backend
 
-Docker (planned) - for easy deployment
+Docker (planned) – for easier deployment
 
